@@ -1,3 +1,5 @@
+# source <(curl -sL https://bit.ly/2WFdtUO)
+
 timedatectl set-ntp true
 
 pacman -Syyy

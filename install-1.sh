@@ -1,14 +1,3 @@
-# $PASS
-# $SSID
-
-# iwctl --passphrase $PASS station wlan0 connect $SSID
-
-# timedatectl set-ntp true
-
-# pacman -Syyy
-# reflector -c Russia -a 6 --sort rate --save /etc/pacman.d/mirrorlist
-# pacman -Syyy
-
 mkfs.vfat /dev/nvme0n1p1
 mkfs.ext4 /dev/nvme0n1p5
 
