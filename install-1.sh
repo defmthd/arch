@@ -1,4 +1,7 @@
-iwctl --passphrase [password] station wlan0 connect "SSID"
+# $PASSWD
+# $SSID
+
+iwctl --passphrase $PASSWD station wlan0 connect $SSID
 
 timedatectl set-ntp true
 
