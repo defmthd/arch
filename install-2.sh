@@ -1,4 +1,4 @@
-# $ROOT_PASSWD
+# $ROOT_PASS
 
 fallocate -l 2GB /swapfile
 chmod 600 /swapfile
@@ -18,7 +18,7 @@ locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.con
 echo "Arch" >> /etc/hostname
 
-echo root:$ROOT_PASSD | chpasswd
+echo root:$ROOT_PASS | chpasswd
 
 pacman -S grub efibootmgr os-prober ntfs-3g networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers git bluez bluez-utils pulseaudio-bluetooth xf86-video-amdgpu xorg 
 
