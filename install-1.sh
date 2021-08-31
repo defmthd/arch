@@ -1,7 +1,7 @@
 # $PASSWD
 # $SSID
 
-iwctl --passphrase $PASSWD station wlan0 connect $SSID
+# iwctl --passphrase $PASSWD station wlan0 connect $SSID
 
 timedatectl set-ntp true
 
@@ -13,12 +13,14 @@ pacman -Syyy
 mkfs.vfat /dev/nvme0n1p1
 mkfs.ext4 /dev/nvme0n1p5
 
-mkdir /mnt/boot
-mkdir /mnt/windows11
 
-mount /dev/nvme0n1p1 /mnt/boot
-mount /dev/nvme0n1p3 /mnt/windows11
 mount /dev/nvme0n1p5 /mnt
+
+mkdir /mnt/boot
+mount /dev/nvme0n1p1 /mnt/boot
+
+mkdir /mnt/windows11
+mount /dev/nvme0n1p3 /mnt/windows11
 
 pacstrap /mnt base linux linux-firmware vim amd-ucode
 
