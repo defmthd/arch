@@ -11,8 +11,8 @@ ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc
 timedatectl set-ntp true
 
-sed -d '177s/.//' /etc/locale.gen
-sed -d '403s/.//' /etc/locale.gen
+sed -i '177s/.//' /etc/locale.gen
+sed -i '403s/.//' /etc/locale.gen
 locale-gen
 
 echo "LANG=en_US.UTF-8" >> /etc/locale.con
