@@ -14,4 +14,8 @@ pacstrap /mnt base linux linux-firmware vim amd-ucode
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt
+
+pacman -S git
+git clone https://github.com/defmthd/arch.git
+
 cd /arch

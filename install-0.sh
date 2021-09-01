@@ -1,3 +1,4 @@
+# iwctl --passphrase [password] station wlan0 connect "SSID"
 # source <(curl -sL https://bit.ly/2WFdtUO)
 
 timedatectl set-ntp true
