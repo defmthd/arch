@@ -5,7 +5,7 @@ chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 
-echo /etc/fstab >> "/swapfile none swap defaults 0 0"
+echo "/swapfile none swap defaults 0 0" >> /etc/fstab
 
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc

@@ -14,3 +14,4 @@ pacstrap /mnt base linux linux-firmware vim amd-ucode
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt
+cd /arch
