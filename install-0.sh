@@ -8,6 +8,6 @@ reflector -c Russia -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 pacman -Syyy
 
 pacman -S git
-git clone https://github.com/defmthd/arch.git
+git clone https://github.com/defmthd/arch.git /mnt/arch
 
-cd arch
+cd /mnt/arch

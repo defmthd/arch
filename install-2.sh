@@ -20,7 +20,9 @@ echo "Arch" >> /etc/hostname
 
 echo root:$ROOT_PASS | chpasswd
 
-pacman -S grub efibootmgr os-prober ntfs-3g networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers git bluez bluez-utils pulseaudio-bluetooth xf86-video-amdgpu xorg 
+pacman -S grub efibootmgr os-prober ntfs-3g networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers avahi inetutils dnsutils alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack pavucontrol acpi acpi_call git bluez bluez-utils pulseaudio-bluetooth xf86-video-amdgpu
+
+pacman -S xf86-video-amdgpu
 
 echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 
@@ -30,8 +32,12 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager
 systemctl enable bluetooth
+systemctl enable avahi-daemon
+systemctl enable acpid
 
 useradd -mG wheel defmthd
 passwd defmthd
+
+chown -R defmthd:defmthd /mnt/arch
 
 # don't forget visudo ;)
