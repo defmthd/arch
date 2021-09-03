@@ -38,6 +38,6 @@ systemctl enable acpid
 useradd -mG wheel defmthd
 passwd defmthd
 
-chown -R defmthd:defmthd /mnt/arch
+chown -R defmthd:defmthd /arch
 
 # don't forget visudo ;)

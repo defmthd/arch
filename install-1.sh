@@ -12,5 +12,6 @@ mount /dev/nvme0n1p3 /mnt/windows11
 pacstrap /mnt base linux linux-firmware vim amd-ucode
 
 genfstab -U /mnt >> /mnt/etc/fstab
+git clone https://github.com/defmthd/arch.git /mnt/arch
 
 arch-chroot /mnt
