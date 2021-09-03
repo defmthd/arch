@@ -4,7 +4,7 @@
 timedatectl set-ntp true
 
 pacman -Syyy
-reflector -c Germany -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+reflector -c Russia -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 pacman -Syyy
 
 pacman -S git
