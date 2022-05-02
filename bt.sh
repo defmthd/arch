@@ -39,7 +39,7 @@ pacman -S rsync reflector
 reflector -c Russia -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 pacman -Syyy
 
-pacman -S grub grub-btrfs efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools base-devel linux-headers os-prober
+pacman -S grub grub-btrfs efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools ntfs-3g base-devel linux-headers os-prober
 
 echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 
