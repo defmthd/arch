@@ -52,3 +52,7 @@ useradd -m defmthd
 echo defmthd:$PASS | chpasswd
 
 echo "defmthd ALL=(ALL) ALL" >> /etc/sudoers.d/defmthd
+
+pacman -S alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack
+
+pacman -S acpi fwupd intel-media-driver iwd libva-utils xf86-video-intel mesa mesa-demos sof-firmware alsa-ucm-conf vulkan-icd-loader vulkan-intel vulkan-mesa-layers vulkan-tools
