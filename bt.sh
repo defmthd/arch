@@ -26,6 +26,8 @@ pacstrap /mnt base linux linux-firmware vim btrfs-progs
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 
+# -----
+
 timedatectl set-ntp true
 
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -62,6 +64,8 @@ pacman -S sway waybar wofi mako alacritty
 pacman -S sof-firmware alsa-utils alsa-ucm-conf pipewire pipewire-alsa pipewire-pulse pipewire-jack pavucontrol
 
 pacman -S acpi intel-media-driver xf86-video-intel mesa mesa-demos vulkan-icd-loader vulkan-intel vulkan-mesa-layers vulkan-tools
+
+# -----
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
