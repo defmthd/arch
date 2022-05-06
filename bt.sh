@@ -1,9 +1,9 @@
 # source <(curl -sL https://t.ly/ps5g)
 
-export WIFI_PASS="password"
-export PASS="password"
+# export WIFI_PASS="password"
+# export PASS="password"
 
-iwctl --passphrase $WIFI_PASS station wlan0 connect "Juno 5G"
+# iwctl --passphrase $WIFI_PASS station wlan0 connect "Juno 5G"
 
 mkfs.btrfs -f /dev/nvme0n1p5
 mount /dev/nvme0n1p5 /mnt
