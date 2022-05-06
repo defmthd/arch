@@ -1,3 +1,4 @@
+# source <(curl -sL https://t.ly/BzHz)
 # -----
 
 timedatectl set-ntp true
