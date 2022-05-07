@@ -34,9 +34,9 @@ echo "defmthd ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/defmthd
 
 pacman -S sway waybar wofi mako alacritty
 
-pacman -S sof-firmware alsa-utils alsa-ucm-conf pipewire pipewire-alsa pipewire-pulse pipewire-jack pavucontrol
+pacman -S sof-firmware alsa-utils alsa-ucm-conf pipewire pipewire-alsa pipewire-pulse pipewire-jack pavucontrol brightnessctl
 
-pacman -S acpi intel-media-driver xf86-video-intel mesa mesa-demos vulkan-icd-loader vulkan-intel vulkan-mesa-layers vulkan-tools
+pacman -S acpi intel-media-driver xf86-video-intel libva-intel-driver mesa mesa-demos vulkan-icd-loader vulkan-intel vulkan-mesa-layers vulkan-tools
 
 # -----
 
