@@ -38,6 +38,10 @@ pacman -S sof-firmware alsa-utils alsa-ucm-conf pipewire pipewire-alsa pipewire-
 
 pacman -S acpi intel-media-driver xf86-video-intel libva-intel-driver mesa mesa-demos vulkan-icd-loader vulkan-intel vulkan-mesa-layers vulkan-tools
 
+pacman -S docker docker-compose
+
+sudo gpasswd -a defmthd docker
+
 # -----
 
 git clone https://aur.archlinux.org/yay.git
